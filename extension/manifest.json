@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Snail Spoke Controller",
+  "version": "1.3.0",
+  "description": "Control YouTube playback at 0.2×, 0.4×, 0.5× or 0.6× with Spoke.",
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
